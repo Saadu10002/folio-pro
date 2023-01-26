@@ -23,7 +23,7 @@ h1 {
 nav {
   display: flex;
   justify-content: right;
-  
+  list-style-type: none;
 }
 ul {
   display: flex;
