@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 
 body {
@@ -8,225 +6,148 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #CC5500
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+.hero-banner{
+  background-color: brown;
+  height: 100vh;
+  font-size: 20px;
+}
+h1 {
+  font-size: 80px;
   margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-header {
-  padding: 15px 0 15px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: grey; 
 }
 
 nav {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: right;
   
 }
-nav a {
-  text-decoration: none;
-  padding: 5px 10px;
-  color: var(--scendary);
-  margin-right: 10px;
-  background-image: 
-  background-repeat: no-repeat ;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
 }
-nav a:last-child {
-  margin-right: 0;
-}
-nav a:hoover {
-  background-size: 100% 100%;
-  color: var(--primary);
 
+li {
+   width: 200px;
+   text-decoration: none;
 }
-.hero-banner {
-background-color: rgb(81,131, 212);
-background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary)100%);
-background-size: cover;
-background-position: center;
-background-blend-mode: soft-light;
-min-height: 30vh;
-color: var(--light);
-padding: 2% 6%;
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
-text-align: right;
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-.hero-banner div {
-  flex: 0 0 90%
-}
-.hero-banner h2 {
-  background-color: var(--scendary);
-  color: var(--tertiary);
+
+
+p {
   margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline;
+  font-size: 25px;
 }
-.page-wrapper {
-max-width: 88%;
-margin-left: auto;
-margin-right: auto;
-}
-.page-section {
-  margin: 25px;
-  padding: 10px;
+
+
+.hero-area {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
-}  
-
-.page-section > h2 {
-  flex: 0 0 20%;
-  text-align: right;
-  padding-right: 15px;
-  border-right: 4px solid grey;
-  font-size: 4vw;
-  line-height: 1.1;
-}
-.page-section > div {
-flex: 0 o 77%
-}
-
-.page-section p {
-  margin-bottom: 20px;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
   justify-content: center;
 }
 
-.flex-item {
-  border: 5px solid grey;
-  background-color: grey;
-  color: black;
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
+footer {
+  /* background-color: #3d0c02; */
+  /* color: #f8f8ff; */
+  text-align: center;
+  padding: 80px;
+}
+
+.hero-text {
+  margin-left: 70px;
+  margin-bottom: 200px;
+}
+
+.button{
+width: 200PX;
+height: 55px;
+border-radius: 30PX;
+background-color: #8F4600;
+text-align: center;
+margin: 30PX;
+font-size: 30PX;
+font-weight: 30PX;
+padding-top: 5PX;
+
+}
+
+
+
+.button-hover {
+  background-color: #B8860b;
+}
+
+
+.button-active {
+  background-color: #00008B;
+  color: #c4aead;
+}
+
+ 
+.sub-section {
   display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.picture {
+  width: 300px;
+  border-radius: 150px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  box-shadow:5px 5px 20px; 
+
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 1000px) {
+  .project-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 122px;
+}
+
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
   text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
+  color: #000000;
 }
-
-.flex-item:first-child{
-  min-height: 400px;
-  flex-basis: 100%;
-}
-.flex-item:hover {
-  background-color:  rgba(0, 0, 0, 0.3);
-}
-.contact address a {
-  color: black
-  padding: 5px;
-  text-decoration: none;
-  font-style: normal;
-  margin: 0 0.2rem 0.1rem;
-  background-image: linear(270deg,var(--primary) 0%, var(--primary) 100%);
-}
-
-.contact address a:hover {
-  color: pink;
-}
-.corgis-report {
-  background-image: url("../images/02-run-buddy.jpg");
-}
-.calc {
-  background-image: url("../images/02-portfolio-1.jpg") ;
-}
-.Chrome-Extension {
-  background-image: url("../images/02-portfolio-2.jpg");
-}
-
-.Crypto {
-  background-image: url("../images/02-portfolio-3.jpg");
-}
-
-.game {
-  background-image: url("../images/02-portfolio-4.jpg");
-}
-
- @media screen and (max-width: 1000px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align:center;
-  }
-
-  header h1 {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    font-size: 10vw;
-
-  }
- }
-
- header nav {
-  justify-content: center;
-
- }
-
- .page-section > h2,
- .page-section > div {
-  flex: 0 0 100%;
- }
-
- .page-section > h2 {
-  border-right: none;
-  border-bottom: 4px solid pink;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  text-align: left;
-  font-size: 7vw;
-  
- }
-
- @media sreen and (max-width: 768px){
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-  }
- }
